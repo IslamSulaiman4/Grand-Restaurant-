@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reservation</title>
+    <link rel="icon" href="https://themes-themegoods.b-cdn.net/grandrestaurantv6/demo8/wp-content/uploads/sites/8/2021/01/cropped-TG-Thumb-192x192-1.png" sizes="192x192">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+
+    <!-- fontwesome -->
+    <link rel="stylesheet" href="vendor/fontwesome/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/media.min.css">
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="assets/css/main.min.css">
+
+</head>
+
+<body>
+    <div class="loading z-3 vh-100 w-100 position-fixed d-flex justify-content-center align-items-center ">
+        <div class="text-center loader ">
+            <img class=""  width="54%" src="assets/img/logo-white.png" alt="logo-white"/>
+        </div>
+    </div>
+
+    <div class="scroll-to-top opacity-0 invisible">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+    <!-- start navbar  -->
+    <nav class="navbar navbar-expand-lg fixed-top z-2">
+        <div class="container ">
+                        <a class="navbar-brand ms-3" href="#">
+                <img width="125" src="assets/img/logo-white.png" alt="logo" />
+            </a>
+            <div class="nav-icons text-white p-4 d-flex me-3">
+                <div class="icon px-2"><i class="fa-brands fa-facebook"></i></div>
+                <div class="icon px-2"><i class="fa-brands fa-instagram"></i></div>
+                <div class="icon px-2"><i class="fa-brands fa-earlybirds"></i></div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item px-4 d-flex align-items-center ">
+                        <div class="nav-link   position-relative p-0">
+                            <a class="home " aria-current="page" href="index.html">Home</a>
+                            <i class=" fa-solid fa-chevron-down  " id="icon"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link position-relative p-0" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link  position-relative p-0" aria-current="page" href="menu.html">Our Menus</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link  position-relative p-0  active" aria-current="page" href="reservation.html">Reservation</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link  position-relative p-0" aria-current="page" href="contact.html">Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+    <div class="window pt-4 bg-white z-2 position-absolute  rounded rounded-2 h-75 overflow-y-scroll overflow-x-hidden "  style="width: 92%; top: 64px; left:5%">
+      
+        <div class="row d-flex justify-content-center column-gap-3 row-gap-4 ">
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 " width="204"height="204" src="assets/img/Grand-Restaurant-WordPress-Theme-–-Just-another-WordPress-site.jpg"/>
+            </div>
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/Home-2-–-Grand-Restaurant-WordPress-Theme.jpg"/>
+            </div>
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/Home-3-–-Grand-Restaurant-WordPress-Theme.jpg"/>
+            </div>                
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/Home-4-–-Grand-Restaurant-WordPress-Theme.jpg"/>
+            </div>
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/Home-5-–-Grand-Restaurant-WordPress-Theme.jpg"/>
+            </div>
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 " width="204"height="204" src="assets/img/Home-6-–-Grand-Restaurant-WordPress-Theme.jpg"/>
+            </div>
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/Grand-Restaurant-WordPress-Theme-Demo-2-–-Just-another-Grand-Restaurant-WordPress-Theme-Sites-site.jpg"/>
+            </div>
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/Grand-Restaurant-WordPress-Theme-Demo-3-–-Just-another-Grand-Restaurant-WordPress-Theme-Sites-site.jpg"/>
+            </div>
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/4.jpg"/>
+            </div>
+            <div class="col-lg-2 ">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/5.jpg"/>
+            </div>        
+       
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/Grand-Restaurant-WordPress-Theme-Demo-6-–-Just-another-Grand-Restaurant-WordPress-Theme-Sites-site.jpg"/>
+            </div>
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/Grand-Restaurant-WordPress-Theme-Demo-7-–-Just-another-Grand-Restaurant-WordPress-Theme-Sites-site.jpg"/>
+            </div>
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 " width="204"height="204" src="assets/img/Grand-Restaurant-WordPress-Theme-Demo-8-–-Just-another-Grand-Restaurant-WordPress-Theme-Sites-site.jpg"/>
+            </div>
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/Grand-Restaurant-WordPress-Theme-Demo-9-–-Just-another-Grand-Restaurant-WordPress-Theme-Sites-site.jpg"/>
+            </div>
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/Grand-Restaurant-WordPress-Theme-Demo-10-–-Just-another-Grand-Restaurant-WordPress-Theme-Sites-site.jpg"/>
+            </div>                
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/Grand-Restaurant-Fusion-Restaurant-WordPress-Theme-–-Just-another-WordPress-site.jpg"/>
+            </div>         
+        
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/Grand-Restaurant-Clean-Food-WordPress-Theme-–-Just-another-Grand-Restaurant-Fusion-Restaurant-WordPress-Theme-Sites-site.jpg"/>
+            </div>
+            <div class="col-lg-2">
+                <img class="rounded rounded-2 "width="204"height="204"  src="assets/img/Grand-Restaurant-Pizza-Restaurant-WordPress-Theme-–-Just-another-Grand-Restaurant-Fusion-Restaurant-WordPress-Theme-Sites-site.jpg"/>
+            </div>
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+   
+       
+    </div>
+    <!-- end navbar  -->
+        <!-- start header  -->
+        <header class="res-header vh-100 position-relative " id="second-section">
+            <div class="demo py-2">
+                <i class="fa-solid fa-gear"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-book-open"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="container  d-flex align-items-center justify-content-center vh-100 text-center">
+                <div class="header-content text-white ">
+                    <span>MORE FLAVOR FOR LESS</span>
+                    <h1>Reservation</h1>
+                    <p class="mb-5 pb-2">When the going gets tough, the tough get grilling. Bringing heat<br>to your meat.
+                        No one can compete with our meat</p>
+                </div>
+            </div>
+    
+
+        </header>
+        <!-- end header  -->
+
+            <div class=" rese ">
+                <img class="plate position-absolute" src="assets/img/image-from-rawpixel-id-2602283-png.png" alt="plate" />
+            <img class="leaf position-absolute" src="assets/img/home-leaf-left.png" alt="a leaf" />
+        </div>
+
+        <!-- start reservation-info -->
+        <section class="reservation-info text-white overflow-hidden  position-relative" >
+            <div class="container px-5">
+                <div class="row row-gap-4">
+                    <div class="col-lg-7  col-md-6 ">
+                        <h2 class="text-main-color w-90" style="font-size: 34px; line-height: 47px;">"Until I discovered cooking I was never really interested in anything"</h2>
+                        <div class="row py-4">
+                            <div class="col-lg-6 pe-4">
+                                <h3 class="py-2" style="font-size: 24px;">Reserve by Phone</h3>
+                                <p class="fw-light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                                <p class="fw-light">Please call us at <span class="text-main-color">1.800.456.6756 </span> between 10am-6pm, Monday to Friday.</p>
+                            </div>
+                            <div class="col-lg-6 ps-0 pe-5">
+                                <h3 class="py-2" style="font-size: 24px;">Event & Group Booking</h3>
+                                <p class="fw-light">Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-5 col-md-6  b  rounded ronded-2 t " >
+                        <div class="b rounded rounded-2 px-5">
+                        <div class=" pt-5 d-flex justify-content-between align-items-center">
+                            <div class="lt">
+                                <h3 style="font-size: 20px;">Lunch Time</h3>
+                                <p class="fw-light" style="line-height: 16px;">Monday to Sunday</p>
+                                <p class="fw-light" style="line-height: 16px;">10.30am - 3:00pm</p>
+                            </div>
+                            <div class="dt">
+                                <h3 style="font-size: 20px;">Dinner Time</h3>
+                                <p class="fw-light" style="line-height: 16px;">Monday to Sunday</p>
+                                <p class="fw-light" style="line-height: 16px;">5.30pm - 11:00pm</p>
+                            </div>
+                        </div>
+                        <div class=" py-4 loc">
+                            <h3 style="font-size: 20px;">Location</h3>
+                            <p class="fw-light" style="line-height: 16px;">732/21 Second Street, Manchester Kingston United Kingdom</p>                        
+                        </div>
+                        <div class=" pb-5 pt-3 text-center ">
+                            <button class=" bt rounded rounded-2 fw-semibold">Make an Online Reservation</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     <!-- end reservation-info -->
+
+     <!-- start reservation-info -->
+     <div class="position-relative rel imag">
+     </div>
+
+      <!-- start about  -->
+    <section class="about-reservation ">
+        <div class="container ">
+            <div class="row row-gap-3 ">
+                <div class="about-image col-lg-5 col-md-6  m-auto">
+                    <img src="assets/img/volkan-vardar-1H30uRC1plc-unsplash-678x1024.jpg" style="width: 100%;" alt="inside Restaurant" />
+                </div>
+                <div class="about-text col-lg-6 col-md-6 position-relative d-flex align-items-center">
+                    <div class="para">
+                        <span class="text-white letter">YOUR SPECIAL OCCASION DESTINATION</span>
+                        <p class="text-main-color">The Wilma is a premium taste that yearns to be <span class="fst-italic">savored</span>, ground beef between your <span class="fst-italic">teeth</span></p>
+                        <img class="position-absolute "style="width: 70%; height: 7%;"
+                        src="assets/img/divider.png" alt="divider" />
+                    </div>
+
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    <!-- end about  -->
+    <!-- start about us -->
+
+    <section class="father">
+        <div class="res-about-us position-relative text-white">
+      
+            <div class=" w-60">
+                <div class=" text-center  d-flex flex-column align-items-center py-5 ">
+                    <span class="text-uppercase letter" >WE SAVED YOU A SEAT</span>
+                    <h2 class="py-2 first w-50">Discover About Us</h2>
+                    <p class="py-2 first w-55" style="font-size: 18px;" >When the going gets tough, the tough get grilling. Bringing heat to your meat. No one can compete with our meat</p>
+                    <span class="lined position-relative mt-4 letter">LEARN MORE</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="divider" >
+            <div class="d position-relative ">
+                <div class="basic-title res text-center text-white">
+                    <p  class="text-uppercase " >FOLLOW ALONG</p>
+                   <div class="title d-flex justify-content-center align-items-center gap-4">
+                    <img class="h-25" alt="header" src="assets/img/noun_wavy-lines_1781282.png"/>
+                    <h2>@Wilma</h2>
+                    <img class="h-25" alt="header" src="assets/img/noun_wavy-lines_1781282.png"/>
+                   </div>
+                </div>
+                <div class="leafs position-absolute w-100 d-flex justify-content-between">
+                    <div class="overflow-hidden x ">
+                        <img class=" leafs-about w-100" alt="leafs" src="assets/img/image-from-rawpixel-id-2353079-png-1.png" />
+    
+                    </div>"
+                    <img class="  leaf " alt="leaf" src="assets/img/home-leaf-left.png" />
+                 </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- end about us -->
+
+        <!-- start photos section -->
+        <section class="photos photo-res">
+            <div class="container  ">
+                <div class="row row-gap-4 px-5 " >
+                    <div class="col-lg-4 col-md-12 image " >
+                        <img class="w-100 rounded-2 cursor first " style="height: 345px;object-fit: cover" alt="dish" src="assets/img/louis-hansel-shotsoflouis-KQR3ENYfrpw-unsplash-768x771.jpg"/>
+                    </div>
+                    <div class="col-lg-5 col-md-8 image " >
+                        <img class="w-100 rounded-2 cursor two"style="height: 345px;object-fit: cover"   alt="dish" src="assets/img/wesual-click-SrX3-GldyL0-unsplash-768x511.jpg"/>
+                    </div>
+                    <div class="col-lg-3 col-md-4 image " >
+                        <img class="w-100 rounded-2 cursor four" style="height: 345px;object-fit: cover"  alt="Inside Restaurant" src="assets/img/bundo-kim-Pb9bUzH1nD8-unsplash-768x1152.jpg"/>
+                    </div>
+                    <div class="col-lg-5 col-md-8 image " >
+                        <img class="w-100 rounded-2  cursor two" style="height: 345px;object-fit: cover"  alt="dish" src="assets/img/alasdair-elmes-ULHxWq8reao-unsplash-768x512.jpg"/>
+                    </div>
+                    <div class="col-lg-3 col-md-4  image " >
+                        <img class="w-100 rounded-2 cursor four"style="height: 345px;object-fit: cover"   alt="dish" src="assets/img/eiliv-sonas-aceron-cWqxHoa3zXk-unsplash-768x1152.jpg"/>
+                    </div>
+                    <div class="col-lg-4 col-md-12 image " >
+                        <img class="w-100 rounded-2 cursor last" style="height: 345px;object-fit: cover"  alt="Inside Restaurant" src="assets/img/stephan-valentin-l2viCaR3JUo-unsplash-768x768.jpg"/>
+                    </div>
+    
+            </div>
+            </div>
+        </section>
+        <!-- end photos section -->
+    
+        <!-- start footer section -->
+        <footer class="mb-5 res-footer">
+            <div class="container py-4">
+                <div class="row text-white  py-5">
+                    <div class="fir col-lg-4 col-md-4 text-center pb-5 pe-0">
+                        <img class="w-50 logo" alt="logo" src="assets/img/logo-gold.png"/>
+                    </div>
+                    <div class="sec col-lg-4 col-md-4  py-4  d-flex flex-column align-items-center justify-content-center text-white  text-center">
+                        <a class="fw-semibold py-2 letter" href="#">OUR MENUS</a>
+                        <a class="fw-semibold py-2 letter" href="#">RESERVATION</a>
+                        <a class="fw-semibold py-2 letter" href="#">ABOUT</a>
+                        <a class="fw-semibold py-2 letter" href="#">CONTACT US</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 py-3 px-5">   
+                        <div class="footer-icons d-flex text-main-color p-2">
+                            <i class=" px-3 fa-brands fa-facebook"></i>
+                            <i class=" px-3 fa-brands fa-instagram"></i>
+                            <i class=" px-3 fa-brands fa-earlybirds"></i>
+                            </div>
+    
+                    <p class="mb-0 py-4">© Copyright ThemeGoods</p>
+                    <p >All Rights Reserved</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of use</p>
+    
+    
+                
+                </div>
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- end footer section -->
+    
+    
+
+
+
+
+
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js " ></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

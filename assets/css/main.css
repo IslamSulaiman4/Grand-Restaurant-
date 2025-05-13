@@ -1,0 +1,819 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;900&display=swap');
+/* font-family:"Fira Sans",sans-serif; */
+
+:root {
+    --main_color: #CA9C5E;
+    --main_font: "Fira Sans", sans-serif;
+}
+
+body {
+    font-family: var(--main_font);
+    background-color: rgb(11, 21, 23);
+    overflow: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px ;
+    font-weight: 400;
+     line-height:28.8px;
+}
+
+.text-main-color {
+    color: var(--main_color) !important;
+    ;
+}
+
+span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 65px;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 36px;
+}
+h4{
+    font-size: 24px;
+}
+p{
+    font-size: 16px;
+    line-height: 30px;
+}
+.w-30{
+    width: 30%;
+}
+.w-36{
+    width: 36%;
+}
+.w-46{
+    width: 46%;
+}
+.w-55{
+    width: 55%;
+}
+.w-60{
+    width: 60%;
+}
+.w-70 {
+    width: 70%;
+}
+.w-80{
+    width: 80%;
+}
+.w-82{
+    width: 82%;
+}
+.w-99{
+    width: 99%;
+}
+.w-90{
+    width: 90%;
+}
+
+.lined {
+    font-size: 18px;
+}
+
+.lined::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 1.6px;
+    background-color: var(--main_color);
+    bottom: 40px;
+    left: -50px;
+}
+
+.lined::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 1.6px;
+    background-color: var(--main_color);
+    bottom: -16px;
+    left: -50px;
+}
+
+.cursor:hover {
+    cursor: pointer;
+}
+.transition{
+    transition-duration: 2s;
+    transition-property: width;
+
+}
+
+/* transition 
+.reservation .text-center h2,.reservation .text-center p,.reservation .text-centerspan{
+    transition-delay: 400ms;
+    transition-duration: 800ms;
+    transform: translateX(0px) translateY(0px) translateZ(0px);
+    opacity: 0;
+}
+
+*/
+
+
+/*loading*/
+.loading{
+    background-color:#0B1517 ;
+    transition: 0.5s ;
+}
+
+.loading img{
+    opacity: 0.3;
+    animation-name:overlay;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes overlay {
+    from 
+    {opacity: 0.2;
+    height: 100%;
+}
+    to
+     { opacity:1;
+    height: 0px;
+}
+  }
+/*scroll to top */
+.scroll-to-top i{
+    position: fixed;
+    color: #a3a3a3;
+    right: 23px;
+    bottom: 27px;
+    cursor: pointer;
+    font-size:20px;
+    z-index: 2;
+    transition: 0.4s;
+
+}
+.scroll-to-top i:hover{
+    color: #fff;
+}
+
+/* nav section */
+.navbar{
+transition: 0.2s background-color;
+}
+.navbar .nav-item {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar .nav-item .nav-link,.navbar .nav-item .nav-link .home {
+    color: white ;
+}
+
+.navbar .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    left: 0px;
+    bottom: -2px;
+    background-color: var(--main_color);
+    transition: 0.3s;
+
+}
+
+
+.navbar .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link .home:hover  {
+    color: var(--main_color) !important;
+}
+
+.navbar .nav-item i {
+    font-size: 9px;
+
+}
+
+.navbar .nav-icons {
+    font-size: 18px;
+}
+
+.navbar .nav-icons i:hover {
+    cursor: pointer;
+}
+.active{
+    color: var(--main_color)   !important;
+}
+
+.window{
+display: none;
+}
+/* end of navbar */
+
+
+/* header section */
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/eric-mcnew-WWtubRjKXK8-unsplash.jpg);
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: #CA9C5E;
+    background-size: cover;
+    overflow-x: clip;
+
+}
+
+header .demo {
+    position: fixed;
+    height: 146px;
+    width: 34px;
+    border-radius: 5px 0 0 5px;
+    top: 150px;
+    right: 0;
+    background-color: #fff;
+    z-index: 2;
+    cursor: pointer;
+}
+
+header .demo i {
+    font-size: 15px;
+    line-height: 33px;
+    color: #000;
+    padding: 0px 0px 0px 9px;
+}
+
+.header .leaf {
+    right: -70px;
+    top: 433px;
+    width: 380px;
+    height: 445.55px;
+
+}
+
+.header .leaf2 {
+    left: 0px;
+    top: 538px;
+    width: 330px;
+    height: 370.14;
+
+}
+/* about page*/
+
+header .about-leaf{
+    object-fit: cover;
+    top:10%;
+    left: 0px;
+    width: 23%;
+}
+header .about-leaf2{
+    width: 54%;
+    top: 6%;
+    right: -30%;
+}
+header .about-header{
+letter-spacing: 2px;
+}
+
+/* menu page*/
+.head-of-menu .header-content {
+    overflow: hidden;
+    white-space:nowrap;
+   padding-left: 15px;
+animation: typing 4s forwards;
+}
+@keyframes typing{
+    from{
+   width: 0%;
+    }
+    to{
+        width: 650px;
+    }
+}
+.head-of-menu  .menu-leaf {
+    object-fit: cover;
+    top: 0px;
+    left: -87px;
+     width: 22%;
+}
+.head-of-menu  .menu-leaf2 {
+    width: 54%;
+    top: -46px;
+    right: -30%;
+}
+.head-of-menu  .r-desh{
+    top: 5px;
+    position: absolute;
+    width: 21%;
+    right: -54px;
+}
+.head-of-menu  .l-desh{
+    position: absolute;
+    top: 59%;
+    width: 20%;
+    left: -82px;
+}
+
+.menu .photo{
+    top: -138px;
+}
+.menu .h-divider{
+    width: 32%;
+    top: 32px;
+    right: -110px;
+}
+.menu .br-desh{
+    width: 21%;
+    right: -94px;
+}
+.menu p{
+    font-weight: 300;
+    line-height: 28.8px;
+}
+.menu h4.price{
+    font-size: 22px;
+}
+.first-menu .m-c{
+    top: 212px;
+    left: 151px; 
+}
+.first-menu  .photobase{
+    top: -331px;
+}
+.first-menu .f,.third-menu .f{
+    margin-left: 50px;
+}
+.second-menu .photobase{
+    top: -132px;;
+    left: 64%;
+}
+.second-menu .m-c{
+    top: 1171px;
+    right: 40px;
+}
+.third-menu .m-c{
+    bottom: -133px;
+    left: 151px; 
+}
+
+
+.paragraph h2 span{
+    font-size: 45px;
+    font-weight: 500;
+}
+.paragraph .container{
+    top: 175px;
+    width: 50%;
+}
+.menu .photo{
+    height: 400px !important;
+}
+
+.menu-information,.menu-information i.first-column,.menu-information i.second-column{
+   display: none;
+}
+.menu-information i.first-column{
+    left: -8px;
+    top: 44%;
+}
+.menu-information i.second-column{
+    right: -8px;
+    top: 44%;
+}
+
+
+/* reservation page */
+.res-header{
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/image-from-rawpixel-id-415001-jpeg.jpg);
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: #CA9C5E;
+    background-size: cover;
+    background-position-y: center;
+}
+.res-header .content{
+    overflow: hidden;
+    white-space:nowrap;
+   padding-left: 15px;
+animation: typing 2s forwards;
+}
+@keyframes typing{
+    from{
+   width: 0%;
+    }
+    to{
+        width: 650px;
+    }
+}
+.rese .plate {
+    width: 21%;
+    top: 431px;
+    left: -6%;
+    z-index: 1;
+}
+.rese .leaf {
+    width: 21%;
+    top: 2px;
+    right: 0px;
+    top: 452px;
+    z-index: 1;
+}
+
+/* contact page */
+.contact-header{
+    background-image: linear-gradient(rgba(0, 0, 0,0.01), rgba(0, 0, 0,0.01)), url(../img/toa-heftiba-weLTddM4cI-unsplash.jpg);
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: #CA9C5E;
+    background-size: cover;
+    background-position-y: center;
+}
+.contact-header .header-content{
+    overflow: hidden;
+    white-space:nowrap;
+   padding-left: 15px;
+animation: typing 2s forwards;
+}
+@keyframes typing{
+    from{
+   width: 0%;
+    }
+    to{
+        width: 650px;
+    }
+}
+.contact .aleaf {
+    width: 50.5%;
+    top: 386px;
+    left: -432px;
+}
+.contact .leaf {
+    width: 16%;
+    right: 0px;
+    top: 455px;
+}
+.contact-info,.form{
+    margin-left: 8%;
+    margin-top: 6%;
+}
+
+/* end of header */
+
+
+/* about section */
+
+.about img {
+    height: 707px;
+}
+
+.about span,.about-reservation span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 38px !important;
+}
+
+.about-text p,.about-text p span {
+    font-size: 45px !important;
+    font-weight: 400;
+    line-height: 58.5px;
+
+}
+
+.about .about-text img {
+    top: 552px;
+    left: -122px;
+}
+
+
+/* end of about */
+
+/* start of menus */
+
+
+ .letter {
+    letter-spacing: 2px;
+}
+
+.menus .plate {
+    left: 30px;
+    top: 30px;
+}
+
+.menus .divider .d {
+    width: 35%;
+}
+
+.menus .divider .plate {
+    left: -138px;
+    top: -81px;
+}
+
+/* menu-title */
+.basic-title {
+    position: relative;
+    bottom: -252px;
+}
+
+.title .h-25 {
+    width: 90px;
+}
+
+.menu-items {
+    bottom: -301px;
+}
+
+.menu-items .bordered, .m-c .bordered {
+    box-sizing: border-box;
+    border: #CA9C5E 1px solid;
+
+}
+.para-divider #leaf{
+    right: 0px;
+}
+
+.menu-items .bordered .head, .m-c .bordered .head{
+    background-color: var(--main_color);
+}
+
+
+/* end of menus */
+
+
+/* start of reservation */
+.reservation {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/nong-vang-ERzsxOMcC7Q-unsplash-1.jpg);
+    top: 300px;
+    background-position: center;
+    overflow: hidden;
+    
+}
+
+.reservation .leafs {
+    left: -150px;
+    top: 344px;
+    width: 28%;
+}
+.reservation .letter{
+    letter-spacing: 3px;
+}
+
+/* about page*/
+.about-header .header-content{
+    overflow: hidden;
+    white-space:nowrap;
+   padding-left: 15px;
+animation: typing 1s forwards;
+}
+@keyframes typing{
+    from{
+   width: 0%;
+    }
+    to{
+        width: 650px;
+    }
+}
+
+.reservation  .res-about{
+    top: 278px!important;
+    background-position: center;
+}
+
+.res .leafs,.home-res  .leafs {
+  top:  0px;
+}
+.res .divider .x,.father .divider .x,.home-res .divider .x{
+
+    width: 27%;
+    height: 27%;
+    left: -147px;
+    position: relative;
+}
+
+ .res .divider .leaf,.father .divider .leaf,.home-res .divider .leaf {
+    width: 17%;
+    height: 10%;
+}
+
+.res .divider .d,.father .divider .d,.home-res  .divider .d{
+    top: 0px;
+}
+
+.res .divider .basic-title,.home-res  .divider .basic-title{
+    top: 400px;
+}
+
+
+/* reservation page */
+
+.father .divider .basic-title{
+    top: 509px;
+}
+.father .leafs{
+    top: 247px;
+}
+
+
+
+
+/* end of reservation */
+
+
+/* start of photos */
+.photos {
+    position: relative;
+    top: 452px;
+   
+}
+
+.photos .w-10 {
+    width: 10%;
+    object-fit: cover;
+}
+
+.photos .image {
+    transition: transform 2s;
+}
+
+.photos .image img:hover {
+    transform: scale(1.1);
+}
+
+/* reservation page */
+.photo-res{
+    top: 533px !important;
+
+}
+/* end of photos*/
+footer {
+    position: relative;
+    bottom: -500px;
+}
+
+footer .fir,
+footer .sec {
+    border-right: #CA9C5E 1px solid;
+    
+}
+footer a:hover{
+    color: var(--main_color);
+}
+footer i{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+footer p{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    color: rgb(255,255,255);
+}
+
+.res-footer{
+    top: 603px;
+}
+
+
+/* about page*/
+/* recommendation section */
+.recommendation .leafs{
+    top: -210px;
+}
+.recommendation .plate {
+    left: 37%;
+    top: 91%;
+
+}
+.recommendation .aparagraph{
+    top: -133px;
+    position: relative;
+}
+
+
+.recommendation .recommend-d { 
+    position: relative;
+    top: -78px;
+}
+
+.recommendation .outline{
+    border: #CA9C5E 1px solid !important;
+
+}
+.recommendation .divider .d{
+    top: 88px;
+    left: -6%;
+}
+.recommendation .divider .leaf{ 
+    right: -6%;
+    top: -95px;
+    z-index: 1;
+    width: 29%;
+}
+
+/* end of recommendation */
+
+.divider .d{
+    top: 100px;
+}
+
+
+/* reservation page */
+.rese{
+    top: 450px;
+}
+
+.reservation-info{
+    top: 100px;
+}
+.reservation-info .t {
+   padding: 11px;
+   width: 37.5%;
+}
+.reservation-info .bt
+    {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+.reservation-info .b{
+    border: #CA9C5E 1px solid !important;
+}
+.reservation-info button{
+    background-color: var(--main_color); 
+    color: #fff;
+}
+.rel{
+top: 200px;
+}
+.imag{
+    background-image: url(../img/alasdair-elmes-ULHxWq8reao-unsplash.jpg);
+    background-size: cover;
+    padding-top: 212px;
+    padding-bottom: 212px;
+    background-position-y:center;
+}
+.about-reservation{
+    top: 285px;
+    position: relative;
+}
+
+
+
+/* about us page */
+.res-about-us{
+
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/fish-tilapia-cooked-in-tazhin-and-vegetables-copy-PP6NXSH.jpg);
+        top: 380px;
+        background-position: center;
+        background-size: cover;
+    
+}
+.about-reservation .about-text img{ top: 623px;
+    left: -63px;}
+
+/* contact page */
+.form .col-md-4{
+    padding-right: 8.5%;
+}
+ .form input,.form textarea{
+    background-color:rgb(11, 21, 23);;
+    color: #fff;
+ }
+.form button{
+    background-color: var(--main_color);
+    color: #fff;
+    padding: 15px 25px 15px  25px;
+}
+
+.res-about-us.con{
+    top: 100px !important;
+}
+.father .leafs.con{
+    top:-12px ;
+}
+
+.father .divider .basic-title.con{
+    top: 253px;
+}
+.photo-con{
+    top: 305px;
+}
+.con-footer {
+    top: 353px;
+}
+
+
+
